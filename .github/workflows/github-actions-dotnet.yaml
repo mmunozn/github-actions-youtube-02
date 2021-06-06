@@ -18,4 +18,8 @@ jobs:
       - name: Check out repository code ('${{ github.repository }}' cloned to the runner)
         uses: actions/checkout@v2
     
+      - name: Setup .NET Core SDK (${{ env.DOTNET_CORE_VERSION }})
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
  

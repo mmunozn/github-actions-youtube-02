@@ -14,8 +14,8 @@ jobs:
       BUILD_CONFIGURATION: Release
       PROJECT_PATH: 'src/MyProject'
       PROJECT_TEST_PATH: 'tests/**.Tests'
- steps:
-  - name: Check out repository code ('${{ github.repository }}' cloned to the runner)
-    uses: actions/checkout@v2
+    steps:
+      - name: Check out repository code ('${{ github.repository }}' cloned to the runner)
+        uses: actions/checkout@v2
     
  

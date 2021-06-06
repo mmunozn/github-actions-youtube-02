@@ -29,3 +29,6 @@ jobs:
       - name: Build - .NET Core ${{ env.DOTNET_CORE_VERSION }}
         run: dotnet build --configuration ${{ env.BUILD_CONFIGURATION }}
         working-directory: "${{ env.PROJECT_PATH }}"
+        
+      - name: Unit Tests 
+        run: dotnet test ${{ env.PROJECT_TEST_PATH }}

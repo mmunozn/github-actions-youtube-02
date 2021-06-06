@@ -28,4 +28,4 @@ jobs:
 
       - name: Build - .NET Core ${{ env.DOTNET_CORE_VERSION }}
         run: dotnet build --configuration ${{ env.BUILD_CONFIGURATION }}
-        working-directoy: "${{ env.PROJECT_PATH }}"
+        working-directory: "${{ env.PROJECT_PATH }}"

@@ -23,3 +23,9 @@ jobs:
         with:
           dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
  
+      - name: Restore Packages
+        run: dotnet restore "${{ env.PROJECT_PATH }}"
+
+      - name: Build - .NET Core ${{ env.DOTNET_CORE_VERSION }}
+        run: dotnet build --configuration ${{ env.BUILD_CONFIGURATION }}
+        working-directoy: "${{ env.PROJECT_PATH }}"

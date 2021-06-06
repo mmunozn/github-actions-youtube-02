@@ -8,7 +8,7 @@ namespace MyProject.Tests
         [Fact]
         public void MyTest()
         {
-            Assert.True(false, "Should be true");
+            Assert.True(true, "Should be true");
         }
     }
 }

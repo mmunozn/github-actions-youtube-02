@@ -1,4 +1,4 @@
-name: GitHub Actions DotNet
+name: GitHub Actions DotNet demo
 on: 
   push:
     paths-ignore:
